@@ -1,0 +1,13 @@
+{
+  "name": "arc-dark-mod",
+  "displayName": "Arc Dark (mod)",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "Arc Dark (mod) Nylas Mail theme",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "styleSheets": ["email-frame"],
+  "private": true
+}

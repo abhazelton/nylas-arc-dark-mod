@@ -1,0 +1,159 @@
+@arc-grey:              #404552;
+@arc-dark-grey:         #2F343F;
+@arc-light-grey:        #414857;
+@arc-border:            #272C35;
+@arc-hover:             #505766;
+@arc-select:            #5294E2;
+@arc-select-unfocused:  #4877B1;
+@white:                 #FFFFFF;
+
+///PANEL
+@panel-background-color:         #353945;
+@source-list-bg:                 @panel-background-color;
+@source-list-active-bg:          @panel-background-color;
+@source-list-active-color:       @arc-select;
+
+/// MENU
+@menu-divider-color: @arc-dark-grey;
+@menu-item-color-hover: @arc-light-grey;
+@menu-item-color-selected: @arc-select;
+@menu-text-color-selected: @white;
+
+///BACKGROUND FONT MESSAGES
+@background-primary:     @arc-grey;
+@background-off-primary: @arc-grey;
+
+///BACKGROUND MESSAGES AND TOOLBAR
+@background-secondary:   @arc-dark-grey;
+@background-tertiary:    @arc-dark-grey;
+
+///BORDERS
+@list-border:            @arc-border;
+@border-color-primary:   @arc-border;
+@border-color-secondary: @arc-border;
+@border-color-tertiary:  @arc-border;
+@border-color-divider:   @arc-border;
+
+///TEXT COLORS
+@text-color:         @white;
+@text-color-inverse: @white;
+@text-color-alert:  #E64D65;
+@text-color-heading: @white;
+@text-color-link:        @arc-select;
+@text-color-link-hover:  @arc-select-unfocused;
+@text-color-link-active: @arc-select-unfocused;
+
+///SELECTION
+@accent-primary:         #3D94E3;
+@accent-primary-dark:    @arc-select;
+@accent-secondary:       #4A7AB4;
+
+///HILIGHT
+@list-bg:                @arc-hover;
+
+///TOOLBAR, SEARCH, BUTTONS
+@toolbar-background-color: @arc-dark-grey;
+.sheet-toolbar {
+  border-bottom: 1px solid @list-border !important;
+  .sheet-toolbar-container {
+    background: @arc-dark-grey;
+  }
+  .btn-toolbar {
+    background: @arc-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+     &:hover {
+      background: @arc-hover;
+      }
+     &:active {
+      background: @arc-select;
+     }
+}
+  .search-bar .menu .header-container input {
+    background: @arc-light-grey;
+    border: 1px solid @list-border !important;
+    box-shadow: none;
+ }
+}
+
+///UNFOCUSED
+body.is-blurred {
+  .sheet-toolbar-container {
+    background: @arc-dark-grey;
+    .btn.btn-toolbar {
+      background: @arc-light-grey;
+      box-shadow: none;
+    }
+  }
+  .search-bar .menu .header-container input {
+    background: @arc-light-grey;
+    box-shadow: none;
+  }
+  .list-container .list-item.focused {
+    background: @arc-select-unfocused;
+    color:      @white;
+  }
+}
+
+///NORMAL
+body {
+  .list-container .list-item.focused {
+    background: @arc-select;
+    color:      @white;
+  }
+}
+
+///SCROLLBAR
+.scrollbar-track {
+  background: @arc-grey;
+  border: 1px solid @list-border !important;
+  .scrollbar-handle {
+    width: 8px;
+    border: none;
+    background: #737985;
+     &:hover {
+       background: #737985;
+       border: none;
+    }
+     &:active {
+      background: @arc-select;
+      border: none;
+     }
+  }
+}
+
+.thread-list .list-item .list-column-HoverActions .action.action-archive {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-archive@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-trash {
+    background: url("../static/images/thread-list-quick-actions/ic-quick-button-trash@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-list .list-item .list-column-HoverActions .action.action-snooze {
+    background: url("../static/images/thread-list-quick-actions/ic-quickaction-snooze@2x.png") center no-repeat, linear-gradient(to top, rgb(37, 143, 225) 0%, rgb(37, 143, 225) 100%);
+}
+.thread-injected-mail-labels {
+.removable {
+    color: @white !important;
+    background-color: @arc-light-grey !important;
+    border: 1px solid @list-border !important;
+    background-image: none !important;
+    box-shadow: none !important;
+     &:hover {
+      background: @arc-hover !important;
+      }
+     &:active {
+      background: @arc-select !important;
+    }
+  }
+}
+.thread-injected-mail-labels  .mail-label  img {
+
+    background-color: rgb(213, 214, 216) !important;
+}
+.item-container {
+    input {
+     background-color: @arc-grey;
+   }
+}
+  
+@import 'preferences';
